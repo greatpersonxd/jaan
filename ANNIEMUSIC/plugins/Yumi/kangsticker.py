@@ -62,7 +62,7 @@ async def sticker_image(_, message: Message):
     await m.delete()
     os.remove(f)
 #----------------
-@app.on_message(filters.command("mkang"))
+@app.on_message(filters.command("kang"))
 @capture_err
 async def kang(client, message: Message):
     if not message.reply_to_message:
@@ -83,7 +83,7 @@ async def kang(client, message: Message):
     ):
         sticker_emoji = message.reply_to_message.sticker.emoji
     else:
-        sticker_emoji = "🤔"
+        sticker_emoji = "💘"
 
     # Get the corresponding fileid, resize the file if necessary
     doc = message.reply_to_message.photo or message.reply_to_message.document
