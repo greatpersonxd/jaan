@@ -24,7 +24,7 @@ async def chat_gpt(app, message):
 
         if len(message.command) < 2:
             # Reply with default message if no query provided
-            await message.reply_text("**Hello sir, I am Jarvis. How can I help you today?**")
+            await message.reply_text("**Hello sir, I am Tosu. How can I help you today?**")
         else:
             query = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
